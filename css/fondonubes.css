@@ -1,0 +1,69 @@
+body {
+    background-image: url("../img/fondonubes_Mesa de trabajo 1.jpg");
+    background-repeat: repeat-y;
+    background-size: contain;
+    background-position: center;
+}
+/* Personajes */
+.personajes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 20px;
+}
+.personajes img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+.personajes .info {
+  margin-top: 6px;
+  font-size: 0.85rem;
+  opacity: 0.7;
+  text-align: center;
+}
+.fixed-height-img {
+  height: 300px; /* Set a fixed height */
+  object-fit: cover; /* Image covers the area without stretching */
+  width: 100%; /* Image is responsive within the card */
+}
+@media (max-width: 576px) {
+  .personajes {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 576px) {
+  .personajes {
+    padding: 10px;
+  }
+}
+
+/* Video Uh-Fool */
+.video-responsive {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    padding-top: 56.25%; /* 16:9 */
+}
+.video-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Hover de Pink */
+.hover-pink img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.hover-pink:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+/* Imagenes Pink */
+.img-fluid {
+    border-radius: 32px;
+}

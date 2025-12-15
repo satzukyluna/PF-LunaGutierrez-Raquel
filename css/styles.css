@@ -1,0 +1,165 @@
+/* Fuentes */
+h1 {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+.introduccion .text-body-emphasis {
+  color: coral !important;
+  font-size: 72px;
+  margin-bottom: 20px;
+}
+h2 {
+    color: rgb(255, 185, 94);
+  font-family: "Edu QLD Hand", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  font-family: "Itim", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+/* Barra de navegacion */
+}
+.BarraNav span {
+  color: coral;
+}
+.BarraNav .nav-link {
+  color: #32a859;
+}
+.BarraNav .nav-link:hover {
+  color: rgb(255, 208, 80);
+}
+
+/* Recursos de aprendizaje */
+.recursos .card {
+  background-color: #41b67c; /* el color que quieras */
+  color: #7aff8c;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.recursos .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+/* Galeria de Ilustraciones */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 20px;
+}
+.galeria img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+.galeria .info {
+  margin-top: 6px;
+  font-size: 0.85rem;
+  opacity: 0.7;
+  text-align: center;
+}
+.fixed-height-img {
+  height: 300px; /* Set a fixed height */
+  object-fit: cover; /* Image covers the area without stretching */
+  width: 100%; /* Image is responsive within the card */
+}
+@media (max-width: 576px) {
+  .galeria {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 576px) {
+  .galeria {
+    padding: 10px;
+  }
+}
+/* Botón de contacto */
+.btn-primary {
+  background-color: coral;
+  border-color: coral;
+}
+
+.btn-primary:hover {
+  background-color: rgb(154, 233, 122);
+  border-color: rgb(122, 233, 159);
+}
+
+/* Redes sociales */
+.link-social {
+  padding: 10px;
+  border-radius: 12px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.link-social:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  transform: translateY(-2px);
+}
+.social-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+/* Imagenes de Proyectos */
+.imagefeature {
+    object-fit: cover;
+}
+.imagefeature {
+    object-fit: contain;
+}
+
+/* Storyboard Uh-Fool */
+.storyboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    flex-direction: column;
+}
+.storyboard img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Fondo */
+body {
+    background-image: url("../img/fondonubes2_Mesa de trabajo 1.jpg");
+    background-repeat: repeat-y;
+    background-size: contain;
+    background-position: center;
+}
+
+/* Botones de Proyectos */
+.icon-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-btn img {
+    width: 300px;      /* ajusta al tamaño que dibujes */
+    height: auto;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.icon-btn:hover img {
+    transform: scale(1.1);
+    opacity: 0.85;
+}
